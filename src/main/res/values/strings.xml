@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">chicz:m3u8</string>
+    <string name="m3u8_addr_file">first</string>
+    <string name="m3u8_file">second</string>
+    <string name="video_temp">video_temp</string>
+    <string name="video_download">video_download</string>
+    <string name="video_addr_url">http://192.168.1.10:8080/app/getAll</string>
+
+    <string name="N_A">N_A</string>
+    <string name="close">Close</string>
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+</resources>

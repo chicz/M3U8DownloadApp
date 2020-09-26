@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/playback_controller_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/playback_controller_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/bg_video_top"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/playback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="Back"
+            android:background="@android:color/transparent"
+            />
+
+        <com.example.mym3u8down.view.MarqueeTextView
+            android:id="@+id/playback_controls_title"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="35dp"
+            android:paddingRight="60dp"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="测试阿斯顿一段很长非常长特别十分超级无敌super宇宙第一长的不得了的长标题是真的非常非常长，不信你自己看现在还没结束"
+            tools:text="测试Test" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playback_controller_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_video_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/playback_play_pause"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            style="@style/MyCheckBox_Play"
+            />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/playback_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:maxHeight="4.0dip"
+            android:minHeight="4.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progress_seekbar"
+            android:thumb="@drawable/progress_seekbar_thumb"
+            android:progress="25"
+            android:secondaryProgress="50"
+            />
+
+        <TextView
+            android:id="@+id/playback_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="00:00"
+            tools:text="12:12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/playback_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="1:23:59"
+            tools:text="30:12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

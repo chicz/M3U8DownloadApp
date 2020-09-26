@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!---->
+    <!--
+    android:drawable 放一个drawable资源
+    android:state_pressed 是否按下，如一个按钮触摸或者点击。
+    android:state_focused 是否取得焦点，比如用户选择了一个文本框。
+    android:state_hovered 光标是否悬停，通常与focused state相同，它是4.0的新特性
+    android:state_selected 被选中，它与focus state并不完全一样，
+                           如一个list view 被选中的时候，
+                           它里面的各个子组件可能通过方向键，被选中了。
+    android:state_checkable 组件是否能被check。如：RadioButton是可以被check的。
+    android:state_checked 被checked了，如：一个RadioButton可以被check了。
+    android:state_enabled 能够接受触摸或者点击事件
+    android:state_activated 被激活
+    android:state_window_focused 应用程序是否在前台，
+                           当有通知栏被拉下来或者一个对话框弹出的时候应用程序就不在前台了
+    -->
+
+    <!--corners：定义圆角-->
+    <!--<corners    //定义圆角
+    android:radius="dimension"      //全部的圆角半径
+    android:topLeftRadius="dimension"   //左上角的圆角半径
+    android:topRightRadius="dimension"  //右上角的圆角半径
+    android:bottomLeftRadius="dimension"    //左下角的圆角半径
+    android:bottomRightRadius="dimension" />    //右下角的圆角半径-->
+
+    <!--solid：指定内部填充颜色-->
+    <!--
+    <solid  android:color="color" />
+    -->
+
+    <!--gradient：定义渐变色，2或3渐变色，渐变样式-->
+    <!--
+    <gradient
+        android:type=["linear" | "radial" | "sweep"]    //共有3中渐变类型，线性渐变（默认）/放射渐变/扫描式渐变
+        android:angle="integer"     //渐变角度，必须为45的倍数，0为从左到右，90为从上到下（仅对线性渐变有效）
+        android:centerX="float"     //渐变中心X的相当位置，范围为0～1(仅当渐变类型为放射渐变时有效)
+        android:centerY="float"     //渐变中心Y的相当位置，范围为0～1(仅当渐变类型为放射渐变时有效)
+        android:startColor="color"   //渐变开始点的颜色
+        android:centerColor="color"  //渐变中间点的颜色，在开始与结束点之间
+        android:endColor="color"    //渐变结束点的颜色
+        android:gradientRadius="float"  //渐变的半径，只有当渐变类型为radial时才能使用
+        android:useLevel=["true" | "false"] />  //使用LevelListDrawable时就要设置为true。设为false时才有渐变效果
+    -->
+
+    <!--stroke：描边属性，宽度，颜色，虚实线-->
+    <!--
+        <stroke
+            android:width="dimension"   //描边的宽度
+            android:color="color"   //描边的颜色
+            // 以下两个属性设置虚线
+            android:dashWidth="dimension"   //虚线的宽度，值为0时是实线
+            android:dashGap="dimension" />      //虚线的间隔
+    -->
+
+    <!--size：图形大小-->
+    <!--
+    <size
+        android:width="dimension"
+        android:height="dimension" />
+    -->
+
+    <!--padding：内部边距-->
+    <!--<padding
+            android:left="dimension"
+            android:top="dimension"
+            android:right="dimension"
+            android:bottom="dimension" />-->
+
+    <!--shape：形状-->
+    <!--
+        android:shape=["rectangle"|"oval"|"line"|"ring"] 矩形，椭圆形，线性，环形
+        ring时：
+            android:innerRadius 内环半径
+            android:innerRadiusRatio 浮点值，以环的宽度比率表示内环半径
+            android:thickness 环的厚度
+            android:thicknessRatio 浮点值，以环的宽度比率表示环的厚度
+            android:useLevel boolean值，如果当做是LevelListDrawable使用时值为true，否则为false.
+    -->
+
+</shape>
